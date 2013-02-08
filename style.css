@@ -76,11 +76,18 @@ header h1.logo a:hover {
 }
 header section.menu-panel {
   position: relative;
+  padding: 1.25em;
   background-color: #545454;
   display: none;
   color: white;
 }
+header section.menu-panel ul li {
+  display: inline;
+  margin: 1.25em;
+}
 header p.pull a {
+  position: relative;
+  top: -1px;
   color: #545454;
 }
 

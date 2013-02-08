@@ -21,11 +21,20 @@ header {
 	}
 	section.menu-panel {
 		position: relative;
+		padding: 1.25em;
 		background-color: $greyblack;
 		display: none;
 		color: white;
+		ul {
+			li {
+				display: inline;
+				margin: 1.25em;
+			}
+		}
 	}
 	p.pull a {
+		position: relative;
+		top: -1px;
 		color: $greyblack;
 	}
 }
