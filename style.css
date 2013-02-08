@@ -14,6 +14,8 @@ License URI: http:///www.gnu.org/licenses/gpl-3.0.html
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
@@ -58,6 +60,50 @@ header, footer {
   width: 100%;
 }
 
+header {
+  text-align: center;
+}
+header h1.logo {
+  font-size: 60px;
+  font-size: 3.75rem;
+  color: #545454;
+}
+header h1.logo a {
+  color: inherit;
+}
+header h1.logo a:hover {
+  color: #0091d5;
+}
+header section.menu-panel {
+  position: relative;
+  background-color: #545454;
+  display: none;
+  color: white;
+}
+header p.pull a {
+  color: #545454;
+}
+
+footer {
+  position: relative;
+  height: auto;
+  background-color: #212121;
+  color: #f3f3f3;
+}
+footer section.footer-widget {
+  margin-top: 20px;
+  width: 33%;
+  float: left;
+  padding: 1.25em;
+}
+footer .copyright {
+  position: relative;
+  margin-top: 40px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
 .content {
   position: relative;
   width: 60em;
@@ -66,4 +112,34 @@ header, footer {
   margin: 0 auto;
   padding: 0.625em;
   /* 10px */
+}
+
+section.main {
+  margin-bottom: 2.5em;
+}
+section.main article.post {
+  padding: 1.25em;
+  border-top: 1px dashed #cccccc;
+}
+section.main article.post h2.post-title {
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  color: #545454;
+}
+section.main article.post h2.post-title a {
+  color: inherit;
+}
+section.main article.post h2.post-title a:hover {
+  color: #0091d5;
+}
+section.main article.post p {
+  margin-top: 1.25em;
+}
+section.main article.post p a:hover {
+  color: #196675;
+}
+section.main article.post p a.more-link {
+  text-align: center;
+  display: block;
 }
