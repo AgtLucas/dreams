@@ -1,0 +1,69 @@
+/*
+Theme Name: Dreams
+Theme URI: http://www.agtlucas.com
+Description: Unknown!
+Version: 0.1
+Author: Lucas Churchill
+License: GNU General Public License version 3.0
+License URI: http:///www.gnu.org/licenses/gpl-3.0.html
+*/
+/*-----------------------------------*\
+	$BASE RULES
+\*-----------------------------------*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-size: 16px;
+  font-family: "Cutive Mono", serif;
+  line-height: 1.3;
+  color: #545454;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #0091d5;
+}
+
+li {
+  list-style: none;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+/*-----------------------------------*\
+	$LAYOUT RULES
+\*-----------------------------------*/
+header, footer {
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  width: 60em;
+  /* 960px */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0.625em;
+  /* 10px */
+}
