@@ -21,21 +21,44 @@ header {
 	}
 	section.menu-panel {
 		position: relative;
-		padding: 1.25em;
-		background-color: $greyblack;
+		background-color: $blackgrey;
 		display: none;
 		color: white;
 		ul {
+			margin-top: 20px;
 			li {
 				display: inline;
 				margin: 1.25em;
+				font-size: 20px;
+				font-size: 1.25rem;
+				color: $awhite;
+				a {
+					color: inherit;
+					&:hover {
+						color: $coolblue;
+					}
+				}
+			}
+		}
+		form {
+			margin: 2.5em;
+			input {
+				width: 50%;
+				height: 30px;
+				background-color: $greyblack;
+				border: none;
+				border-radius: 2px;
+				padding: 0.625em;
+				color: $awhite;
+				font: inherit;
 			}
 		}
 	}
 	p.pull a {
 		position: relative;
-		top: -1px;
-		color: $greyblack;
+		font-size: 30px;
+		top: -7px;
+		color: $blackgrey;
 	}
 }
 
@@ -69,9 +92,16 @@ footer {
 
 section.main {
 	margin-bottom: 2.5em;
+	min-height: 600px;
 	article.post {
 		padding: 1.25em;
 		border-top: 1px dashed #ccc;
+		small {
+			position: relative;
+			display: block;
+			text-align: center;
+			font-weight: bold;
+		}
 		h2.post-title {
 			text-align: center;
 			font-size: 30px;

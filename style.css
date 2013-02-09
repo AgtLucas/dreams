@@ -23,7 +23,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: white;
   font-size: 16px;
   font-family: "Cutive Mono", serif;
   line-height: 1.3;
@@ -76,19 +76,44 @@ header h1.logo a:hover {
 }
 header section.menu-panel {
   position: relative;
-  padding: 1.25em;
-  background-color: #545454;
+  background-color: #212121;
   display: none;
   color: white;
+}
+header section.menu-panel ul {
+  margin-top: 20px;
 }
 header section.menu-panel ul li {
   display: inline;
   margin: 1.25em;
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #f3f3f3;
+}
+header section.menu-panel ul li a {
+  color: inherit;
+}
+header section.menu-panel ul li a:hover {
+  color: #0091d5;
+}
+header section.menu-panel form {
+  margin: 2.5em;
+}
+header section.menu-panel form input {
+  width: 50%;
+  height: 30px;
+  background-color: #545454;
+  border: none;
+  border-radius: 2px;
+  padding: 0.625em;
+  color: #f3f3f3;
+  font: inherit;
 }
 header p.pull a {
   position: relative;
-  top: -1px;
-  color: #545454;
+  font-size: 30px;
+  top: -7px;
+  color: #212121;
 }
 
 footer {
@@ -123,10 +148,17 @@ footer .copyright {
 
 section.main {
   margin-bottom: 2.5em;
+  min-height: 600px;
 }
 section.main article.post {
   padding: 1.25em;
   border-top: 1px dashed #cccccc;
+}
+section.main article.post small {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: bold;
 }
 section.main article.post h2.post-title {
   text-align: center;
