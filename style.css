@@ -18,6 +18,18 @@ License URI: http:///www.gnu.org/licenses/gpl-3.0.html
   padding: 0;
 }
 
+::selection {
+  background-color: #030000;
+  color: #f3f3f3;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: #030000;
+  color: #f3f3f3;
+  text-shadow: none;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
@@ -255,6 +267,32 @@ section.main section.pagination {
   color: #545454;
 }
 
+section.error {
+  position: relative;
+  text-align: center;
+  height: 300px;
+  padding-top: 100px;
+  border-top: 1px dashed #cccccc;
+  font-size: 60px;
+  font-size: 3.75rem;
+}
+section.error form {
+  margin-top: 25px;
+}
+section.error form input {
+  position: relative;
+  background-color: #212121;
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  padding: 1.25em;
+  color: #f3f3f3;
+  font-family: inherit;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
 /*-----------------------------------*\
 	$MEDIA QUERIES
 \*-----------------------------------*/
@@ -278,5 +316,12 @@ section.main section.pagination {
 
   footer section.footer-widget {
     width: 100%;
+  }
+
+  section.error {
+    font-size: 40px;
+  }
+  section.error form input {
+    width: 80%;
   }
 }

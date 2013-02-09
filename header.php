@@ -61,9 +61,7 @@
 				<?php wp_list_pages( 'title_li=&depth=1' ); ?>
 			</ul>
 		<?php endif; ?>
-			<form action="index.html" method="post">
-				<input type="text" placeholder="Search...">
-			</form>
+			<?php get_search_form(); ?>
 		</div>
 	</section>
 	<p class="pull">

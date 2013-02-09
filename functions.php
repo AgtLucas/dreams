@@ -26,7 +26,7 @@ function dreams_scripts_styles() {
 	/* jQuery from Google CDN */
 	if ( !is_admin() ) {
 		wp_deregister_script( 'jquery' );
-		wp_register_script( 'jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js", false, null );
+		wp_register_script( 'jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js", false, null, true );
 		wp_enqueue_script( 'jquery' );
 	}
 
@@ -93,7 +93,39 @@ if ( function_exists( 'register_nav_menus' ) ) :
 	));
 endif;
 
+/**
+ * Register Footer Widgets
+ * 
+ * @since Dreams 0.1
+ */
+if ( function_exists( 'register_sidebar' ) ) {
+	register_sidebar(array(
+		'name'			=> __( 'Footer Widgets 1' ),
+		'id'			=> 'footer-widgets-1',
+		'before_widget'	=> '<li id="%1$s" class="widget %2$s">',
+		'after_widget'	=> '</li>',
+		'before_title'	=> '<h3 class="widget-title">',
+		'after_title'	=> '</h3>',
+	));
 
+	register_sidebar(array(
+		'name'			=> __( 'Footer Widgets 2' ),
+		'id'			=> 'footer-widgets-2',
+		'before_widget'	=> '<li id="%1$s" class="widget %2$s">',
+		'after_widget'	=> '</li>',
+		'before_title'	=> '<h3 class="widget-title">',
+		'after_title'	=> '</h3>',
+	));
+
+	register_sidebar(array(
+		'name'			=> __( 'Footer Widgets 3' ),
+		'id'			=> 'footer-widgets-3',
+		'before_widget'	=> '<li id="%1$s" class="widget %2$s">',
+		'after_widget'	=> '</li>',
+		'before_title'	=> '<h3 class="widget-title">',
+		'after_title'	=> '</h3>',
+	));
+}
 
 
 

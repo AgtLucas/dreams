@@ -33,4 +33,13 @@
 			width: 100%;
 		}
 	}
+
+	section.error {
+		font-size: 40px;
+		form {
+			input {
+				width: 80%;
+			}
+		}
+	}
 }

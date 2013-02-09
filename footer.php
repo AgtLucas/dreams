@@ -4,41 +4,23 @@
 	<div class="content cf">
 		<section class="footer-widget">
 			<ul class="sidebar">
-				<li class="widget">
-					<h3 class="widget-title">Categorias</h3>
-					<ul>
-						<li><a href="#">PHP</a></li>
-						<li><a href="#">HTML 5</a></li>
-						<li><a href="#">CSS 3</a></li>
-						<li><a href="#">jQuery</a></li>
-					</ul>
-				</li>
+				<?php if ( is_active_sidebar( 'footer-widgets-1' ) ) : ?>
+					<?php dynamic_sidebar( 'footer-widgets-1' ); ?>
+				<?php endif; ?>
 			</ul>
 		</section>
 		<section class="footer-widget">
 			<ul class="sidebar">
-				<li class="widget">
-					<h3 class="widget-title">Categorias</h3>
-					<ul>
-						<li><a href="#">PHP</a></li>
-						<li><a href="#">HTML 5</a></li>
-						<li><a href="#">CSS 3</a></li>
-						<li><a href="#">jQuery</a></li>
-					</ul>
-				</li>
+				<?php if ( is_active_sidebar( 'footer-widgets-2' ) ) : ?>
+					<?php dynamic_sidebar( 'footer-widgets-2' ); ?>
+				<?php endif; ?>
 			</ul>
 		</section>
 		<section class="footer-widget">
 			<ul class="sidebar">
-				<li class="widget">
-					<h3 class="widget-title">Tags</h3>
-					<div class="tagcloud">
-						<a href="#">Dicas</a>
-						<a href="#">PHP</a>
-						<a href="#">WordPress</a>
-						<a href="#">Tutoriais</a>
-					</div>
-				</li>
+				<?php if ( is_active_sidebar( 'footer-widgets-3' ) ) : ?>
+					<?php dynamic_sidebar( 'footer-widgets-3' ); ?>
+				<?php endif; ?>
 			</ul>
 		</section>
 		<div class="copyright">

@@ -34,6 +34,18 @@ $livedie: #595959;
 	padding: 0;
 }
 
+::selection {
+	background-color: $nied;
+	color: $awhite;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background-color: $nied;
+	color: $awhite;
+	text-shadow: none;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
 	display: block;
 }
