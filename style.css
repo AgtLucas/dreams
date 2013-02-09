@@ -62,6 +62,26 @@ blockquote {
   clear: both;
 }
 
+.chromeframe {
+  position: relative;
+  background-color: tomato;
+  color: #f3f3f3;
+  font-size: 20px;
+  padding: 40px;
+  top: -10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.chromeframe a {
+  text-decoration: underline;
+  color: #595959;
+}
+.chromeframe .top-secret {
+  position: absolute;
+  top: 10px;
+}
+
 /*-----------------------------------*\
 	$LAYOUT RULES
 \*-----------------------------------*/
@@ -187,6 +207,11 @@ section.main article.post-page {
   border-top: 1px dashed #cccccc;
   margin-bottom: 2.5em;
 }
+section.main article.post-page img, section.main article.post-page video {
+  width: 100%;
+  height: auto;
+  padding: 1.25em 0;
+}
 section.main article.post-page small {
   position: relative;
   display: block;
@@ -195,8 +220,8 @@ section.main article.post-page small {
 }
 section.main article.post-page h2.post-page-title {
   text-align: center;
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 35px;
+  font-size: 2.1875rem;
   color: #545454;
 }
 section.main article.post-page h2.post-page-title a {
@@ -232,6 +257,9 @@ section.main article.post-page p a.more-link {
   }
   header section.menu-panel form input {
     width: 90%;
+  }
+  header p.pull {
+    font-size: 60px;
   }
 
   footer section.footer-widget {

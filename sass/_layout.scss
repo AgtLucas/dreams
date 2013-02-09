@@ -127,6 +127,11 @@ section.main {
 	padding-bottom: 9.375em;
 	min-height: 600px;
 	article.post-page {
+		img, video {
+			width: 100%;
+			height: auto;
+			padding: 1.25em 0;
+		}
 		padding: 1.25em;
 		border-top: 1px dashed #ccc;
 		margin-bottom: 2.5em;
@@ -138,8 +143,8 @@ section.main {
 		}
 		h2.post-page-title {
 			text-align: center;
-			font-size: 30px;
-			font-size: 1.875rem;
+			font-size: 35px;
+			font-size: 2.1875rem;
 			color: $greyblack;
 			a {
 				color: inherit;

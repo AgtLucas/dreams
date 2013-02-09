@@ -77,3 +77,23 @@ blockquote {
 .cf:after {
 	clear: both;
 }
+
+.chromeframe {
+	position: relative;
+	background-color: tomato;
+	color: $awhite;
+	font-size: 20px;
+	padding: 40px;
+	top: -10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	a {
+		text-decoration: underline;
+		color: $livedie;
+	}
+	.top-secret {
+		position: absolute;
+		top: 10px;
+	}
+}
