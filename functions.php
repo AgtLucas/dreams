@@ -81,6 +81,18 @@ function pagination( $pages = '', $range = 4 ) {
 	}
 }
 
+/**
+ * Register Menus
+ * 
+ * @since Dreams 0.1
+ */
+add_theme_support( 'menus' );
+if ( function_exists( 'register_nav_menus' ) ) :
+	register_nav_menus( array(
+			'primary_nav' => 'Primary Navigation'
+	));
+endif;
+
 
 
 
