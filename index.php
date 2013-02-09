@@ -50,12 +50,5 @@ error_reporting(0);
 			<p><a href="#" class="more-link">Read More</a></p>			
 		</article>
 
-	<section class="pagination cf">
-		<span class="current">1</span>
-		<a href="#" class="inactive">2</a>
-		<a href="#" class="inactive">3</a>
-		<a href="#" class="inactive">4</a>
-	</section>
-
 	</div><!-- end .content -->
 <?php get_footer(); ?>

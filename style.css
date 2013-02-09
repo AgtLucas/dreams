@@ -271,6 +271,8 @@ section.main section.pagination {
     width: 90%;
   }
   header p.pull {
+    position: relative;
+    top: -15px;
     font-size: 60px;
   }
 

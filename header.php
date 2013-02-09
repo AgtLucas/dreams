@@ -1,11 +1,32 @@
 <!doctype html>
-<html <?php language_attibutes(); ?>>
+<html <?php language_attributes(); ?>>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="chrome-1">
-	<title>Dreams</title>
+	<meta name="viewport" content="width=device-width">
+	<title>
+	<?php if ( function_exists( 'is_tag' ) && is_tag() ) {
+		single_tag_title( 'Tag Archive for &quot;' ); echo '&quot; - ';
+	} elseif ( is_archive() ) {
+		wp_title( '' ); echo 'Archive - ';
+	} elseif ( is_search() ) {
+		echo 'Search for &quot;'.wp_specialchars($s).'&quot; - ';
+	} elseif ( !( is_404() ) && ( is_single() ) || ( is_page() ) ) {
+		wp_title( '' ); echo ' - ';
+	} elseif ( is_404() ) {
+		echo 'Not Found - ';
+	}
+	if ( is_home() ) {
+		bloginfo( 'name' ); echo ' - '; bloginfo( 'description' );
+	} else {
+		bloginfo( 'name' );
+	}
+	if ( $paged > 1 ) {
+		echo ' - page '. $paged;
+	}?>
+	</title>
 
+	<link rel="shortcut icon" href="<?php print IMAGES; ?>/favicon.ico">
 	<link rel="author" href="https://plus.google.com/110711903987736923620/posts">
 
 	<!--[if lt IE 9]>

@@ -8,6 +8,14 @@
  */
 
 /**
+ * Define Constants
+ * 
+ * @since Dreams 0.1
+ */
+define( 'DREAMS', get_template_directory_uri() );
+define( 'IMAGES', DREAMS . '/img' );
+
+/**
  * Enqueues scripts and styles
  * 
  * @since Dreams 0.1
@@ -37,6 +45,41 @@ function dreams_scripts_styles() {
 	wp_enqueue_style( 'dreams-style', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'dreams_scripts_styles' );
+
+/**
+ * Custom Pagination 
+ * 
+ * @since Dreams 0.1
+ */
+function pagination( $pages = '', $range = 4 ) {
+	$showitems = ( $range * 2 ) + 1;
+
+	global $paged;
+	if ( empty( $paged ) ) $paged = 1;
+
+	if ( $pages == '' ) {
+		global $wp_query;
+		$pages = $wp_query->max_num_pages;
+		if ( !$pages ) {
+			$pages = 1;
+		}
+	}
+	if ( 1 != $pages ) {
+		echo "<section class=\"pagination cf\">";
+		if ( $paged > 2 && $paged > $range+1 && $showitems < $pages ) echo "<a href='".get_pagenum_link( 1 )."'>&laquo; First</a>";
+		if ( $paged > 1 && $showitems < $pages ) echo "<a href='".get_pagenum_link( $paged - 1 )."'>&lsaquo; Previous</a>";
+
+		for ( $i = 1; $i <= $pages; $i++ ) {
+			if ( 1 != $pages && ( !( $i >= $paged+$range+1 || $i <= $paged-$range-1 ) || $pages <= $showitems ) ) {
+				echo ( $paged == $i )? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
+			}
+		}
+
+		if ( $paged < $pages && $showitems < $pages ) echo "<a href=\"".get_pagenum_link( $paged + 1 )."\">Next &rsaquo;</a>";
+		if ( $paged < $pages - 1 && $paged+$range-1 < $pages && $showitems < $pages ) echo "<a href='".get_pagenum_link( $pages )."'>Last &raquo;</a>";
+
+	}
+}
 
 
 
