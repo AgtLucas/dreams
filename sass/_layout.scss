@@ -175,11 +175,17 @@ section.main {
 		width: 100%;
 		border-top: 1px dashed #ccc;
 		margin: 2.5em 0;
-		padding: 1.25em;
+		padding-top: 2.5em;
 		font-size: 30px;
 		font-size: 1.875rem;
 		text-align: center;
 		color: $greyblack;
+		span {
+			padding: 0.625em;
+		}
+		a {
+			padding: 0.625em;
+		}
 	}
 }
 

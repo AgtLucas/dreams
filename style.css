@@ -74,6 +74,10 @@ blockquote {
   clear: both;
 }
 
+#wpstats {
+  display: none;
+}
+
 .chromeframe {
   position: relative;
   background-color: tomato;
@@ -260,11 +264,17 @@ section.main section.pagination {
   width: 100%;
   border-top: 1px dashed #cccccc;
   margin: 2.5em 0;
-  padding: 1.25em;
+  padding-top: 2.5em;
   font-size: 30px;
   font-size: 1.875rem;
   text-align: center;
   color: #545454;
+}
+section.main section.pagination span {
+  padding: 0.625em;
+}
+section.main section.pagination a {
+  padding: 0.625em;
 }
 
 section.error {
