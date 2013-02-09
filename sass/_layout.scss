@@ -167,6 +167,19 @@ section.main {
 				display: block;
 			}
 		}
+
+		section.cat-tags {
+			border-top: 1px dashed #ccc;
+			padding: 1.25em;
+			margin-bottom: 50px;
+			span.cat-links {
+				float: left;
+				margin-bottom: 10px;
+			}
+			span.tag-links {
+				float: right;
+			}
+		}
 	}
 
 	section.pagination {

@@ -258,6 +258,18 @@ section.main article.post-page p a.more-link {
   text-align: center;
   display: block;
 }
+section.main article.post-page section.cat-tags {
+  border-top: 1px dashed #cccccc;
+  padding: 1.25em;
+  margin-bottom: 50px;
+}
+section.main article.post-page section.cat-tags span.cat-links {
+  float: left;
+  margin-bottom: 10px;
+}
+section.main article.post-page section.cat-tags span.tag-links {
+  float: right;
+}
 section.main section.pagination {
   position: relative;
   height: auto;
