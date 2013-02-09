@@ -242,6 +242,18 @@ section.main article.post-page p a.more-link {
   text-align: center;
   display: block;
 }
+section.main section.pagination {
+  position: relative;
+  height: auto;
+  width: 100%;
+  border-top: 1px dashed #cccccc;
+  margin: 2.5em 0;
+  padding: 1.25em;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-align: center;
+  color: #545454;
+}
 
 /*-----------------------------------*\
 	$MEDIA QUERIES
