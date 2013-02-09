@@ -23,7 +23,7 @@
 				<li><a href="#">Reviews</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
-			<form method="post">
+			<form action="index.html" method="post">
 				<input type="text" placeholder="Search...">
 			</form>
 		</div>
@@ -39,20 +39,20 @@
 <section class="main">
 	<div class="content">
 		
-		<article class="post">
-			<h2 class="post-title"><a href="#">My 1st Post</a></h2>
+		<article class="post-page">
+			<h2 class="post-page-title"><a href="#">My 1st Post</a></h2>
 			<small>February 08, 2013</small>
 			<p>
 				Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit. Vel dicta eos tempora debitis facilis similique necessitatibus</a> culpa nulla deserunt possimus. Adipisci enim hic cum eos. Magni enim perspiciatis optio reiciendis.
 			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dicta eos tempora debitis facilis similique necessitatibus culpa nulla deserunt possimus. Adipisci enim hic cum eos. Magni enim perspiciatis optio reiciendis.
+			<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dicta eos tempora debitis facilis</blockquote> 
+			<p>similique necessitatibus culpa nulla deserunt possimus. Adipisci enim hic cum eos. Magni enim perspiciatis optio reiciendis.
 			</p>
 			<p><a href="#" class="more-link">Read More</a></p>
 		</article>
 
-		<article class="post">
-			<h2 class="post-title"><a href="#">My 2nd Post</a></h2>
+		<article class="post-page">
+			<h2 class="post-page-title"><a href="#">My 2nd Post</a></h2>
 			<small>February 08, 2013</small>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iusto esse hic sunt quasi animi expedita ducimus error repellat nostrum explicabo odio officia aperiam dicta sint minus deserunt praesentium atque.
@@ -60,17 +60,20 @@
 			<p><a href="#" class="more-link">Read More</a></p>			
 		</article>
 
-		<article class="post">
-			<h2 class="post-title"><a href="#">My 3rd Post</a></h2>
+		<article class="post-page">
+			<h2 class="post-page-title"><a href="#">My 3rd Post</a></h2>
 			<small>February 08, 2013</small>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi velit libero iste cumque sed totam autem non mollitia expedita laborum nemo ducimus maxime quas facere numquam delectus quibusdam quidem ut.
+			</p>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi velit libero iste cumque sed totam autem non mollitia expedita laborum nemo ducimus maxime quas facere numquam delectus quibusdam quidem ut.
 			</p>
 			<p><a href="#" class="more-link">Read More</a></p>			
 		</article>
 
-		<article class="post">
-			<h2 class="post-title"><a href="#">My 4th Post</a></h2>
+		<article class="post-page">
+			<h2 class="post-page-title"><a href="#">My 4th Post</a></h2>
 			<small>February 08, 2013</small>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum voluptate ab ex dicta porro praesentium eos molestiae quos veniam repudiandae beatae dolores illum itaque animi ipsum architecto reiciendis nihil eligendi!
@@ -84,25 +87,46 @@
 <footer>
 	<div class="content cf">
 		<section class="footer-widget">
-			<h4>Widget Title</h4>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic rerum sed voluptates esse modi quod distinctio temporibus libero molestiae debitis similique omnis voluptatem laborum consequuntur aliquam adipisci sequi sapiente dolor.
-			</p>
+			<ul class="sidebar">
+				<li class="widget">
+					<h3 class="widget-title">Categorias</h3>
+					<ul>
+						<li><a href="#">PHP</a></li>
+						<li><a href="#">HTML 5</a></li>
+						<li><a href="#">CSS 3</a></li>
+						<li><a href="#">jQuery</a></li>
+					</ul>
+				</li>
+			</ul>
 		</section>
 		<section class="footer-widget">
-			<h4>Widget Title</h4>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa tempora reprehenderit corrupti illo velit veniam quibusdam sapiente voluptatum aspernatur odio non dolorem eveniet dignissimos dolores ducimus ratione repellendus itaque?
-			</p>
+			<ul class="sidebar">
+				<li class="widget">
+					<h3 class="widget-title">Categorias</h3>
+					<ul>
+						<li><a href="#">PHP</a></li>
+						<li><a href="#">HTML 5</a></li>
+						<li><a href="#">CSS 3</a></li>
+						<li><a href="#">jQuery</a></li>
+					</ul>
+				</li>
+			</ul>
 		</section>
 		<section class="footer-widget">
-			<h4>Widget Title</h4>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum dolorem magnam recusandae deserunt eum incidunt ullam ut expedita autem nam assumenda perferendis nulla hic explicabo consequatur delectus laborum dolores!
-			</p>
+			<ul class="sidebar">
+				<li class="widget">
+					<h3 class="widget-title">Tags</h3>
+					<div class="tagcloud">
+						<a href="#">Dicas</a>
+						<a href="#">PHP</a>
+						<a href="#">WordPress</a>
+						<a href="#">Tutoriais</a>
+					</div>
+				</li>
+			</ul>
 		</section>
 		<div class="copyright">
-			<p>&copy; Lucas, 2013 - Proudly powered by WordPress</p>
+			<p>&copy; Lucas, 2013 - Proudly powered by <a href="http://wordpress.org" target="_blank">WordPress</a></p>
 		</div>
 	</div>
 </footer>

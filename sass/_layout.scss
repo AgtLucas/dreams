@@ -8,6 +8,7 @@ header, footer {
 
 header {
 	text-align: center;
+	padding-bottom: 3.75em;
 	h1.logo {
 		font-size: 60px;
 		font-size: 3.75rem;
@@ -54,11 +55,14 @@ header {
 			}
 		}
 	}
-	p.pull a {
+	p.pull {
 		position: relative;
 		font-size: 30px;
 		top: -7px;
 		color: $blackgrey;
+		a {
+			color: inherit;
+		}
 	}
 }
 
@@ -72,6 +76,33 @@ footer {
 		width: 33%;
 		float: left;
 		padding: 1.25em;
+		ul.sidebar {
+			li.widget {
+				h3.widget-title {
+					padding-bottom: 1.25em;
+				}
+				ul {
+					padding-left: 1.25em;
+					li {
+						margin-bottom: 0.625em;
+						list-style: square;
+						border-bottom: 1px dashed $retsof;
+						a {
+							&:hover {
+								color: $awhite;
+							}
+						}
+					}
+				}
+			}
+			.tagcloud {
+				a {
+					&:hover {
+						color: $awhite;
+					}
+				}
+			}
+		}
 	}
 	.copyright {
 		position: relative;
@@ -79,6 +110,8 @@ footer {
 		display: inline-block;
 		text-align: center;
 		width: 100%;
+		font-size: 14px;
+		font-size: 0.875rem;
 	}
 }
 
@@ -91,18 +124,19 @@ footer {
 }
 
 section.main {
-	margin-bottom: 2.5em;
+	padding-bottom: 9.375em;
 	min-height: 600px;
-	article.post {
+	article.post-page {
 		padding: 1.25em;
 		border-top: 1px dashed #ccc;
+		margin-bottom: 2.5em;
 		small {
 			position: relative;
 			display: block;
 			text-align: center;
 			font-weight: bold;
 		}
-		h2.post-title {
+		h2.post-page-title {
 			text-align: center;
 			font-size: 30px;
 			font-size: 1.875rem;
@@ -116,6 +150,8 @@ section.main {
 		}
 		p {
 			margin-top: 1.25em;
+			font-size: 20px;
+			font-size: 1.25rem;
 			a {
 				&:hover {
 					color: $sorrow;

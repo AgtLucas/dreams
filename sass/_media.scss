@@ -1,0 +1,31 @@
+/*-----------------------------------*\
+	$MEDIA QUERIES
+\*-----------------------------------*/
+
+/* min-width: 280px max-width: 760px */
+@media screen and(min-width: 17.5em) and (max-width: 47.5em) {
+	.content {
+		padding: 0.3125em;
+	}
+
+	header {
+		section.menu-panel {
+			ul {
+				li {
+					display: block;
+				}
+			}
+			form {
+				input {
+					width: 90%;
+				}
+			}
+		}
+	}
+
+	footer {
+		section.footer-widget {
+			width: 100%;
+		}
+	}
+}
