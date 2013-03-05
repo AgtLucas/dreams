@@ -208,6 +208,8 @@ footer section.footer-widget {
   padding: 1.25em;
 }
 footer section.footer-widget ul.sidebar li.widget h3.widget-title {
+  font-size: 20px;
+  font-size: 1.25rem;
   padding-bottom: 1.25em;
 }
 footer section.footer-widget ul.sidebar li.widget ul {
@@ -301,6 +303,15 @@ section.main article.post-page section.cat-tags {
 section.main article.post-page section.cat-tags span.cat-links, section.main article.post-page section.cat-tags span.tag-links {
   display: block;
   margin-bottom: 10px;
+}
+section.main article.post-page section.cat-tags section.sharing {
+  border-top: 1px dashed #cccccc;
+  margin-top: 20px;
+}
+section.main article.post-page section.cat-tags section.sharing .social-network {
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 section.main section.pagination {
   position: relative;

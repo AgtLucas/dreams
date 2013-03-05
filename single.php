@@ -18,6 +18,29 @@ error_reporting(0);
 			<section class="cat-tags">
 				<span class="cat-links">Categorias <?php the_category( ', ' ); ?></span>
 				<span class="tag-links"><?php the_tags(); ?></span>
+
+				<section class="sharing cf">
+					<div class="social-network">
+						<div class="g-plus" data-action="share"></div>
+						<script type="text/javascript">
+							window.___gcfg = {lang: 'en-GB'};
+
+							(function() {
+							var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+							po.src = 'https://apis.google.com/js/plusone.js';
+							var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+							})();
+						</script>
+					</div>
+					<div class="social-network">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="_agtlucas" data-lang="en">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+					<div class="social-network">
+						<div id="fb-root"></div>
+						<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<?php echo get_permalink(); ?>" show_faces="true" width="450"></fb:like>
+					</div>
+				</section>
 			</section>
 		</article>
 

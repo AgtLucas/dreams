@@ -79,6 +79,8 @@ footer {
 		ul.sidebar {
 			li.widget {
 				h3.widget-title {
+					font-size: 20px;
+					font-size: 1.25rem;
 					padding-bottom: 1.25em;
 				}
 				ul {
@@ -180,6 +182,15 @@ section.main {
 			span.cat-links, span.tag-links {
 				display: block;
 				margin-bottom: 10px;
+			}
+			section.sharing {
+				border-top: 1px dashed #ccc;
+				margin-top: 20px;
+				.social-network {
+					float: left;
+					margin-right: 20px;
+					margin-top: 20px;
+				}
 			}
 		}
 	}
