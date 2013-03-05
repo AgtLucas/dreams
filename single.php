@@ -12,7 +12,7 @@ error_reporting(0);
 
 		<article class="post-page" id="post-<?php the_ID(); ?>">
 			<h2 class="post-page-title"><?php the_title(); ?></h2>
-			<small><?php the_time( 'F j, Y' ); ?></small>
+			<small class="date"><?php the_time( 'F j, Y' ); ?></small>
 				<?php the_content(); ?>
 
 			<section class="cat-tags">

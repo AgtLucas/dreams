@@ -137,8 +137,9 @@ section.main {
 		padding: 1.25em;
 		border-top: 1px dashed #ccc;
 		margin-bottom: 2.5em;
-		small {
+		small.date {
 			position: relative;
+			margin-bottom: 40px;
 			display: block;
 			text-align: center;
 			font-weight: bold;
@@ -171,6 +172,7 @@ section.main {
 			a.more-link {
 				text-align: center;
 				display: block;
+				margin-top: 40px;
 			}
 		}
 

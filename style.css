@@ -260,8 +260,9 @@ section.main article.post-page img, section.main article.post-page video {
   height: auto;
   padding: 1.25em 0;
 }
-section.main article.post-page small {
+section.main article.post-page small.date {
   position: relative;
+  margin-bottom: 40px;
   display: block;
   text-align: center;
   font-weight: bold;
@@ -293,6 +294,7 @@ section.main article.post-page p a:hover {
 section.main article.post-page p a.more-link {
   text-align: center;
   display: block;
+  margin-top: 40px;
 }
 section.main article.post-page section.cat-tags {
   border-top: 1px dashed #cccccc;

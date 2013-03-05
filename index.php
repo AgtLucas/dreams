@@ -12,7 +12,7 @@ error_reporting(0);
 
 		<article class="post-page" id="post-<?php the_ID(); ?>">
 			<h2 class="post-page-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<small><?php the_time( 'F j, Y' ); ?></small>
+			<small class="date"><?php the_time( 'F j, Y' ); ?></small>
 				<?php the_content( 'Read More' ); ?>
 		</article>
 
