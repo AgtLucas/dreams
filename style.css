@@ -46,6 +46,36 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
 }
 
+h1 {
+  font-size: 60px;
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 45px;
+  font-size: 2.8125rem;
+}
+
+h3 {
+  font-size: 35px;
+  font-size: 2.1875rem;
+}
+
+h4 {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+h5 {
+  font-size: 25px;
+  font-size: 1.5625rem;
+}
+
+h6 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
 a {
   text-decoration: none;
   color: #0091d5;
@@ -234,6 +264,9 @@ section.main article.post-page small {
   text-align: center;
   font-weight: bold;
 }
+section.main article.post-page h1, section.main article.post-page h2, section.main article.post-page h3, section.main article.post-page h4, section.main article.post-page h5, section.main article.post-page h6 {
+  color: #0091d5;
+}
 section.main article.post-page h2.post-page-title {
   text-align: center;
   font-size: 35px;
@@ -247,7 +280,8 @@ section.main article.post-page h2.post-page-title a:hover {
   color: #0091d5;
 }
 section.main article.post-page p {
-  margin-top: 1.25em;
+  margin-top: 0.625em;
+  margin-bottom: 0.625em;
   font-size: 20px;
   font-size: 1.25rem;
 }
@@ -262,13 +296,11 @@ section.main article.post-page section.cat-tags {
   border-top: 1px dashed #cccccc;
   padding: 1.25em;
   margin-bottom: 50px;
+  margin-top: 60px;
 }
-section.main article.post-page section.cat-tags span.cat-links {
-  float: left;
+section.main article.post-page section.cat-tags span.cat-links, section.main article.post-page section.cat-tags span.tag-links {
+  display: block;
   margin-bottom: 10px;
-}
-section.main article.post-page section.cat-tags span.tag-links {
-  float: right;
 }
 section.main section.pagination {
   position: relative;

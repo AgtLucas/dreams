@@ -141,6 +141,9 @@ section.main {
 			text-align: center;
 			font-weight: bold;
 		}
+		h1, h2, h3, h4, h5, h6 {
+			color: $coolblue;
+		}
 		h2.post-page-title {
 			text-align: center;
 			font-size: 35px;
@@ -154,7 +157,8 @@ section.main {
 			}
 		}
 		p {
-			margin-top: 1.25em;
+			margin-top: 0.625em;
+			margin-bottom: 0.625em;
 			font-size: 20px;
 			font-size: 1.25rem;
 			a {
@@ -172,12 +176,10 @@ section.main {
 			border-top: 1px dashed #ccc;
 			padding: 1.25em;
 			margin-bottom: 50px;
-			span.cat-links {
-				float: left;
+			margin-top: 60px;
+			span.cat-links, span.tag-links {
+				display: block;
 				margin-bottom: 10px;
-			}
-			span.tag-links {
-				float: right;
 			}
 		}
 	}
