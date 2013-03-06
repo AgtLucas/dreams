@@ -26,7 +26,7 @@ function dreams_scripts_styles() {
 	/* jQuery from Google CDN */
 	if ( !is_admin() ) {
 		wp_deregister_script( 'jquery' );
-		wp_register_script( 'jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js", false, null, true );
+		wp_register_script( 'jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", false, null, true );
 		wp_enqueue_script( 'jquery' );
 	}
 
