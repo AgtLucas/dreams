@@ -24,7 +24,7 @@
 			</ul>
 		</section>
 		<div class="copyright">
-			<p>&copy; Lucas, 2013 - Proudly powered by <a href="http://wordpress.org" target="_blank">WordPress!</a></p>
+			<p>&copy; Lucas, 2013 - Proudly powered by <a href="http://wordpress.org/" target="_blank">WordPress!</a></p>
 		</div>
 	</div>
 </footer>
