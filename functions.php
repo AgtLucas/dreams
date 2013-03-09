@@ -42,7 +42,7 @@ function dreams_scripts_styles() {
 	wp_enqueue_style( 'dreams-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
 
 	/* Main Stylesheet */
-	wp_enqueue_style( 'dreams-style', get_stylesheet_uri() );
+	if ( !is_admin( wp_enqueue_style( 'dreams-style', get_bloginfo( 'stylesheet_directory' ) . '/css/style.css' ) ) );
 }
 add_action( 'wp_enqueue_scripts', 'dreams_scripts_styles' );
 
@@ -80,6 +80,18 @@ function pagination( $pages = '', $range = 4 ) {
 
 	}
 }
+
+/**
+ * Set Minify CSS
+ *
+ */
+// if( !is_admin() ) {
+// 	wp_register_style(
+// 		'style',
+// 		get_bloginfo( 'stylesheet_directory' ) . '/css/style.css', false, 0.1
+// 	);
+// 	wp_enqueue_style( 'style' );
+// }
 
 /**
  * Register Menus
