@@ -82,18 +82,6 @@ function pagination( $pages = '', $range = 4 ) {
 }
 
 /**
- * Set Minify CSS
- *
- */
-// if( !is_admin() ) {
-// 	wp_register_style(
-// 		'style',
-// 		get_bloginfo( 'stylesheet_directory' ) . '/css/style.css', false, 0.1
-// 	);
-// 	wp_enqueue_style( 'style' );
-// }
-
-/**
  * Register Menus
  * 
  * @since Dreams 0.1
