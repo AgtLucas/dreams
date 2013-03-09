@@ -37,7 +37,7 @@ function dreams_scripts_styles() {
 	/* Cutive Mono Font by Google Fonts */
 	$protocol = is_ssl() ? 'https' : 'http';
 	$query_args = array(
-		'family'	=> 'Cutive+Mono:400italic,700italic,400,700',
+		'family'	=> 'Source+Sans+Pro:400italic,700italic,400,700',
 	);
 	wp_enqueue_style( 'dreams-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
 
