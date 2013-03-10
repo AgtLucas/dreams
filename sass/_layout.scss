@@ -130,11 +130,6 @@ section.main {
 	padding-bottom: 9.375em;
 	min-height: 600px;
 	article.post-page {
-		img, video {
-			max-width: 100%;
-			height: auto;
-			padding: 1.25em 0;
-		}
 		padding: 1.25em;
 		border-top: 1px dashed #ccc;
 		margin-bottom: 2.5em;
@@ -174,6 +169,12 @@ section.main {
 				text-align: center;
 				display: block;
 				margin-top: 40px;
+			}
+			img, video {
+				max-width: 100%;
+				margin: 0 auto;
+				height: auto;
+				padding: 1.25em 0;
 			}
 		}
 
