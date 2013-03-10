@@ -38,7 +38,7 @@ error_reporting(0);
 					</div>
 					<div class="social-network">
 						<div id="fb-root"></div>
-						<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<?php echo get_permalink(); ?>" show_faces="true" width="450"></fb:like>
+						<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<?php echo get_permalink(); ?>" data-layout="button_count" show_faces="false" width="150"></fb:like>
 					</div>
 				</section>
 			</section>
