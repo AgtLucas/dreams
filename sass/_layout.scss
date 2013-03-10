@@ -131,7 +131,7 @@ section.main {
 	min-height: 600px;
 	article.post-page {
 		img, video {
-			width: 100%;
+			max-width: 100%;
 			height: auto;
 			padding: 1.25em 0;
 		}
