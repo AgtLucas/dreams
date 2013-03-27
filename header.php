@@ -39,7 +39,6 @@
 <!-- [if lt IE 8]>
  	<div class="chromeframe">
         <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser right now</a> to improve your experience.</p>
-        <div class="top-secret"></div>
     </div>
 <![endif]-->
 <header>
