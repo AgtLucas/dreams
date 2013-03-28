@@ -35,7 +35,6 @@
 	<!--[if lt IE 9]>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
 	<![endif]-->
-	<script src="js/modernizr-2.6.2.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
