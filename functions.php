@@ -30,11 +30,12 @@ function dreams_scripts_styles() {
 		wp_enqueue_script( 'jquery' );
 	}
 
-	/* FitVidsJs adn main JS files */
+	/* JS files */
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . 'js/modernizr-2.6.2.min.js', array(), '2.6.2' );
 	wp_enqueue_script( 'fitvids-js', get_template_directory_uri() . '/js/fitvids.min.js', array(), '1.0', true );
 	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(), '1.0', true );
 
-	/* Cutive Mono Font by Google Fonts */
+	/* Source Sans Pro Font by Google Fonts */
 	$protocol = is_ssl() ? 'https' : 'http';
 	$query_args = array(
 		'family'	=> 'Source+Sans+Pro:400italic,700italic,400,700',

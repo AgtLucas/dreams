@@ -1,5 +1,8 @@
-<!doctype html>
-<html <?php language_attributes(); ?>>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"> <!--<![endif]-->
 <head>
 	<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="chrome-1">
@@ -32,6 +35,7 @@
 	<!--[if lt IE 9]>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
 	<![endif]-->
+	<script src="js/modernizr-2.6.2.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
