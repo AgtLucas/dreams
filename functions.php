@@ -31,7 +31,7 @@ function dreams_scripts_styles() {
 	}
 
 	/* JS files */
-	wp_enqueue_script( 'modernizr', get_template_directory_uri() . 'js/modernizr-2.6.2.min.js', array(), '2.6.2' );
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr-2.6.2.min.js', array(), '2.6.2' );
 	wp_enqueue_script( 'fitvids-js', get_template_directory_uri() . '/js/fitvids.min.js', array(), '1.0', true );
 	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(), '1.0', true );
 
